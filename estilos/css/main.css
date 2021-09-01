@@ -87,28 +87,43 @@
       .header__intro__imagen img {
         border-radius: 50%; }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 950px) {
   .header__navbar {
     display: none; }
+  .header__intro__titulos__h1 {
+    font-size: 14vw; }
+  .header__intro__titulos__linea {
+    width: 50vw; }
+  .header__intro__titulos__h2 {
+    font-size: 4vw; }
   .header__navbar__responsive {
     display: initial;
     margin: 0;
     padding: 0; }
     .header__navbar__responsive .navbar-toggler {
-      color: green;
       background-color: black;
       border-radius: 0.1%; }
       .header__navbar__responsive .navbar-toggler-icon {
+        size: 100px;
         background: #fbde83;
         background: radial-gradient(circle, #fbde83 7%, rgba(0, 245, 220, 0.745536) 31%);
         border-radius: 10%;
-        margin-left: 90%; }
+        margin-top: 10px;
+        margin-left: 80%;
+        font-size: x-large; }
     .header__navbar__responsive .navbar-collapse {
-      background-color: #fbde83; }
+      background-color: black; }
     .header__navbar__responsive .nav-item {
       color: #00f5dc; }
     .header__navbar__responsive .nav-link {
-      color: #00f5dc; } }
+      color: #00f5dc; }
+    .header__navbar__responsive .dropdown-menu {
+      background-color: black;
+      font-size: 20px; }
+    .header__navbar__responsive .dropdown-item {
+      color: #fbde83;
+      text-align: center;
+      font-size: 10vw; } }
 
 .main {
   width: 100%;

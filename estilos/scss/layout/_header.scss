@@ -121,9 +121,21 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 950px) {
   .header__navbar {
     display: none;
+  }
+
+  .header__intro__titulos__h1 {
+    font-size: 14vw;
+  }
+
+  .header__intro__titulos__linea {
+    width: 50vw;
+  }
+
+  .header__intro__titulos__h2 {
+    font-size: 4vw;
   }
 
   // NAVBAR RESPONSIVE
@@ -133,11 +145,11 @@
     padding: 0;
 
     .navbar-toggler {
-      color: green;
       background-color: black;
       border-radius: 0.1%;
 
       &-icon {
+        size: 100px;
         background: rgb(251, 222, 131);
         background: radial-gradient(
           circle,
@@ -145,11 +157,13 @@
           rgba(0, 245, 220, 0.7455357142857143) 31%
         );
         border-radius: 10%;
-        margin-left: 90%;
+        margin-top: 10px;
+        margin-left: 80%;
+        font-size: x-large;
       }
     }
     .navbar-collapse {
-      background-color: $colorAmarillo;
+      background-color: black;
     }
 
     .nav-item {
@@ -158,6 +172,17 @@
 
     .nav-link {
       color: $colorVerde;
+    }
+
+    .dropdown-menu {
+      background-color: black;
+      font-size: 20px;
+    }
+
+    .dropdown-item {
+      color: $colorAmarillo;
+      text-align: center;
+      font-size: 10vw;
     }
   }
   //FIN NAVBAR RESPONSIVE
