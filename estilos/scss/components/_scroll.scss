@@ -1,4 +1,4 @@
-.demo a {
+.scrolldown a {
   display: flex;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
@@ -9,11 +9,11 @@
   cursor: auto;
   margin-top: 20px;
 }
-.demo a:hover {
+.scrolldown a:hover {
   opacity: 0.5;
 }
 
-#section10 a span {
+#scrollDown a span {
   position: absolute;
   top: 0;
   left: 50%;
@@ -24,7 +24,7 @@
   border-radius: 50px;
   box-sizing: border-box;
 }
-#section10 a span::before {
+#scrollDown a span::before {
   position: absolute;
   left: 50%;
   content: "";
