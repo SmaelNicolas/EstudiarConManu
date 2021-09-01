@@ -5,7 +5,7 @@
   flex-direction: column;
   // background-color: #000000;
   padding-bottom: 50px;
-  background-color: rgba(189, 174, 174, 0.596);
+  background-color: rgba(0, 0, 0, 0.986);
   background-image: url(../../img/up.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -170,12 +170,13 @@
         font-size: x-large;
       }
     }
-    .navbar-collapse {
-      // background-color: black;
-    }
+    // .navbar-collapse {
+    //   // background-color: black;
+    // }
 
     .nav-item {
-      color: $colorVerde;
+      // color: $colorVerde;
+      font-size: 3vw;
     }
 
     .nav-link {
@@ -191,7 +192,7 @@
     .dropdown-item {
       color: $colorAmarillo;
       text-align: center;
-      font-size: 10vw;
+      font-size: 5vw;
     }
   }
   //FIN NAVBAR RESPONSIVE
