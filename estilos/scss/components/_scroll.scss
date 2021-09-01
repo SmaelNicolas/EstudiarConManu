@@ -1,8 +1,5 @@
 .demo a {
-  position: relative;
-  bottom: 20px;
-  z-index: 2;
-  display: inline-block;
+  display: flex;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   font: normal 400 20px/1 "Josefin Sans", sans-serif;
@@ -10,14 +7,12 @@
   text-decoration: none;
   transition: opacity 0.3s;
   cursor: auto;
+  margin-top: 20px;
 }
 .demo a:hover {
   opacity: 0.5;
 }
 
-#section10 a {
-  padding-top: 60px;
-}
 #section10 a span {
   position: absolute;
   top: 0;
@@ -31,7 +26,6 @@
 }
 #section10 a span::before {
   position: absolute;
-  top: 10px;
   left: 50%;
   content: "";
   width: 6px;
