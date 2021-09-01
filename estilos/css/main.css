@@ -14,7 +14,7 @@
   flex-direction: column;
   padding-bottom: 50px;
   background-color: rgba(189, 174, 174, 0.596);
-  background-image: url(/img/up.jpg);
+  background-image: url(../../img/up.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
