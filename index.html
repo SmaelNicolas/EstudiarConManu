@@ -39,6 +39,50 @@
     <!-- LINK CSS -->
     <link rel="stylesheet" href="estilos/css/main.css">
 
+    <!-- Jssor Slider Begin -->
+    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function () {
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $Idle: 0,
+                $SlideDuration: 5000,
+                $SlideEasing: $Jease$.$Linear,
+                $PauseOnHover: 4,
+                $SlideWidth: 500,
+                $Align: 0
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            // /*responsive code begin*/
+
+            // var MAX_WIDTH = 980;
+
+            // function ScaleSlider() {
+            //     var containerElement = jssor_1_slider.$Elmt.parentNode;
+            //     var containerWidth = containerElement.clientWidth;
+
+            //     if (containerWidth) {
+
+            //         var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+            //         jssor_1_slider.$ScaleWidth(expectedWidth);
+            //     }
+            //     else {
+            //         window.setTimeout(ScaleSlider, 30);
+            //     }
+            // }
+
+            // ScaleSlider();
+
+            // $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            // $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            // $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            // /*#endregion responsive code end*/
+        };
+    </script>
 
 
 </head>
@@ -147,6 +191,7 @@
         <div class="sobremi__info">
             <img class="sobremi__info__img" src="./img/sobremi.png" alt="">
             <p class="sobremi__info__texto">
+                <br>
                 <span class="sobremi__info__texto__titulo">Sobre Mi</span> <br><br>
                 <span class="sobremi__info__texto__letra">M</span>i nombre es Manuel, de apodo “manuca”, decidí crear
                 contenido orientado a estudiantes actuales y
@@ -156,12 +201,12 @@
                 la facultad: ¿Cómo hago para organizarme? ¿Será difícil? ¿Qué material de estudio necesito? ¿Puedo
                 aprobar las materias
                 sin llorar tanto? La idea en sí es brindar un apoyo a esas preguntas, y muchas más, a través de videos
-                en Internet. <br>
+                en Internet. <br><br>
                 <span class="sobremi__info__texto__letra">A</span>ctualmente estoy estudiando Relaciones Públicas,
                 aunque hice el CBC de 2 carreras en la UBA
                 anteriormente, dejando
                 ambas por la indecisión de a que dedicar mi vida. Esto marcó muchísimo mi vida y mi carrera: saber que
-                estudiar. <br>
+                estudiar. <br><br>
                 <span class="sobremi__info__texto__letra">E</span>n su momento me hubiese encantado encontrar un amigo
                 en internet que me de información sobre como
                 definir esta gran
@@ -171,18 +216,58 @@
                 distintas
                 carreras. ¿Sentís que puede ayudar a muchas personas? Podes compartir el proyecto, así podes brindar tu
                 granito de
-                arena.<br>
+                arena.<br><br>
 
             </p>
 
         </div>
 
         <div class="sobremi__fotos">
-            <img class="sobremi__info__img" src="./img/sobremi.png" alt="">
-            <img class="sobremi__info__img" src="./img/sobremi.png" alt="">
-            <img class="sobremi__info__img" src="./img/sobremi.png" alt="">
+            <div class="jssor_1" id="jssor_1">
+                <div class="slides" data-u="slides">
+                    <div>
+                        <img class="image_slider" src="img/manu.jpg" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/sobremi.png" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/manu.jpg" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/sobremi.png" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/manu.jpg" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/manu.jpg" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/sobremi.png" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/manu.jpg" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/sobremi.png" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/manu.jpg" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/sobremi.png" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/manu.jpg" />
+                    </div>
+                    <div>
+                        <img class="image_slider" src="img/sobremi.png" />
+                    </div>
+                </div>
 
-        </div>
+
+            </div>
 
     </section>
     <!-- FIN SOBRE MI -->
@@ -216,6 +301,14 @@
         </a>
     </div>
     <!--  FIN BOTON toTop -->
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
 </body>
 
 </html>
