@@ -3,13 +3,19 @@
   height: auto;
 
   padding-top: 50px;
+  padding-bottom: 50px;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
+  overflow: hidden;
 
   &__info {
-    width: 100%;
     height: auto;
+    width: 40%;
+
+    padding-left: 5px;
+    padding-right: 5px;
 
     display: flex;
     flex-direction: column;
@@ -30,7 +36,8 @@
 
       text-align: center;
       font-size: 1rem;
-      letter-spacing: 2px;
+      letter-spacing: 0.1em;
+      line-height: 30px;
 
       position: relative;
 
@@ -49,35 +56,58 @@
     &__img {
       width: auto;
       height: auto;
-      max-width: 200px;
       border-radius: 50%;
       z-index: 9;
-      background-color: black;
     }
   }
 
   &__fotos {
-    width: auto;
-    height: 100%;
+    min-width: 650px;
+    max-width: 800px;
+    height: auto;
     margin: 0 auto;
+    margin-top: 50px;
 
-    display: flex;
-    flex-direction: column;
+    .jssor_1 {
+      position: relative;
+      top: 25%;
+      max-width: 100%;
+      overflow: hidden;
+      height: 800px;
+    }
 
-    justify-content: center;
-    align-items: center;
-
-    background-color: pink;
+    .slides {
+      cursor: grab;
+      height: 800px;
+    }
   }
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (max-width: 950px) {
   .sobremi {
-    flex-direction: row;
+    flex-direction: column;
 
     &__info {
-      width: 40%;
-      margin: 0 auto;
+      width: 100%;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .jssor_1 {
+      position: relative;
+      top: 50px;
+      width: 100%;
+      overflow: hidden;
+      height: 800px;
+    }
+
+    .slides {
+      width: 100%;
+      cursor: grab;
+      height: 500px;
     }
   }
+}
+
+@media only screen and (max-width: 950px) {
 }
