@@ -1,5 +1,83 @@
-.sobreMi {
+.sobremi {
   width: 100%;
-  height: 100vh;
-  background-color: yellow;
+  height: auto;
+
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__info {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    &__texto {
+      min-width: 325px;
+      max-width: 450px;
+      margin: 0 auto;
+      height: auto;
+
+      padding: 100px 5px 25px 5px;
+      margin-top: -90px;
+
+      background-color: $colorBgSobremi;
+
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 2px;
+
+      position: relative;
+
+      &__letra {
+        font-size: 2rem;
+      }
+
+      &__titulo {
+        width: auto;
+        height: auto;
+        font-size: 2rem;
+        letter-spacing: 4px;
+      }
+    }
+
+    &__img {
+      width: auto;
+      height: auto;
+      max-width: 200px;
+      border-radius: 50%;
+      z-index: 9;
+      background-color: black;
+    }
+  }
+
+  &__fotos {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: pink;
+  }
+}
+
+@media only screen and (min-width: 950px) {
+  .sobremi {
+    flex-direction: row;
+
+    &__info {
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
 }
