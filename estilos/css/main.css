@@ -80,9 +80,10 @@
       display: flex;
       flex-direction: column; }
       .header__intro__titulos__h1 {
-        font-size: 10vw;
+        font-size: 7vw;
         color: #00f5dc;
-        text-shadow: 3px 2px #000000; }
+        text-shadow: 3px 2px #000000;
+        font-weight: 200; }
       .header__intro__titulos__linea {
         width: 30vw;
         height: 2px;
@@ -210,13 +211,69 @@
 
 .tips {
   width: 100%;
-  height: 100vh;
-  background-color: lightblue; }
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .tips__titulo {
+    font-size: 5vw;
+    color: #fbde83;
+    text-shadow: 1px 2px #000000;
+    letter-spacing: 4px; }
+  .tips__parrafo {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    line-height: 30px; }
+  .tips__videos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .tips__videos__reproductor {
+      max-width: 900px;
+      height: 500px;
+      padding-bottom: 20px; }
+
+@media only screen and (max-width: 900px) {
+  .tips__videos__reproductor {
+    height: 250px;
+    width: 100%; } }
 
 .entrevistas {
   width: 100%;
-  height: 100vh;
-  background-color: green; }
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #aef3eb; }
+  .entrevistas__titulo {
+    font-size: 5vw;
+    color: #fbde83;
+    text-shadow: 1px 2px #000000;
+    letter-spacing: 4px; }
+  .entrevistas__parrafo {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    line-height: 30px; }
+  .entrevistas__videos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .entrevistas__videos__reproductor {
+      max-width: 900px;
+      height: 500px;
+      padding-bottom: 20px; }
 
 .marcas {
   width: 100%;

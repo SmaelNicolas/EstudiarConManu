@@ -100,9 +100,10 @@
       flex-direction: column;
 
       &__h1 {
-        font-size: 10vw;
+        font-size: 7vw;
         color: $colorVerde;
         text-shadow: 3px 2px #000000;
+        font-weight: 200;
       }
 
       &__linea {

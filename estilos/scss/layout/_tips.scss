@@ -1,5 +1,46 @@
 .tips {
   width: 100%;
-  height: 100vh;
-  background-color: lightblue;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__titulo {
+    font-size: 5vw;
+    color: $colorAmarillo;
+    text-shadow: 1px 2px #000000;
+    letter-spacing: 4px;
+  }
+
+  &__parrafo {
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+  }
+
+  &__videos {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__reproductor {
+      max-width: 900px;
+      height: 500px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .tips__videos__reproductor {
+    height: 250px;
+    width: 100%;
+  }
 }
