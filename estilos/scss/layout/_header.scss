@@ -1,16 +1,14 @@
 .header {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  // background-color: #000000;
   padding-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.418);
   background-image: url(../../img/up2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-blend-mode: screen;
 
   // INICIO NAVBAR
   &__navbar {
@@ -41,24 +39,23 @@
 
       list-style: none;
       text-decoration: underline;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
 
       justify-content: center;
       text-align: center;
       margin: 0;
       gap: 1em;
-      text-shadow: 1px 2px #000000;
       :hover {
         color: $colorVerde;
       }
 
       li {
         width: auto;
-        margin-right: 20px;
+        margin-right: 5px;
       }
 
       a {
-        font-size: 3vw;
+        font-size: 2vw;
         color: $colorAmarillo;
       }
     }
@@ -69,15 +66,14 @@
       flex-direction: row;
       justify-content: flex-end;
       text-align: center;
-      gap: 1em;
-      text-shadow: 0.5px 1px #00000086;
+      gap: 0.5em;
       :hover {
         color: $colorAmarillo;
       }
 
       a {
         width: auto;
-        font-size: 3vw;
+        font-size: 2vw;
         color: $colorVerde;
       }
     }
@@ -89,7 +85,6 @@
     height: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 
     justify-content: space-around;
     align-items: center;
@@ -100,10 +95,11 @@
       flex-direction: column;
 
       &__h1 {
-        font-size: 7vw;
+        font-size: 5vw;
         color: $colorVerde;
         text-shadow: 3px 2px #000000;
-        font-weight: 200;
+        font-weight: 900;
+        letter-spacing: 1px;
       }
 
       &__linea {
@@ -114,10 +110,11 @@
       }
 
       &__h2 {
-        font-size: 3vw;
+        font-size: 2vw;
         color: $colorAmarillo;
         text-shadow: 1px 2px #000000;
         letter-spacing: 4px;
+        font-weight: 500;
       }
     }
 
@@ -131,20 +128,35 @@
 }
 
 @media only screen and (max-width: 950px) {
+  .header {
+    height: auto;
+  }
+
   .header__navbar {
     display: none;
   }
 
+  .header__intro__titulos {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .header__intro {
+    flex-direction: column;
+  }
+
   .header__intro__titulos__h1 {
-    font-size: 14vw;
+    font-size: 6vw;
   }
 
   .header__intro__titulos__linea {
-    width: 50vw;
+    width: 20vw;
+    margin-bottom: 5px;
   }
 
   .header__intro__titulos__h2 {
-    font-size: 4vw;
+    font-size: 2vw;
+    letter-spacing: 2px;
   }
 
   // NAVBAR RESPONSIVE
@@ -182,18 +194,21 @@
 
     .nav-link {
       color: $colorVerde;
+      color: black;
+      font-size: 2vw;
     }
 
     .dropdown-menu {
       // background-color: black;
       background-color: transparent;
-      font-size: 20px;
+      font-size: 2vw;
     }
 
     .dropdown-item {
       color: $colorAmarillo;
       text-align: center;
-      font-size: 5vw;
+      font-size: 4vw;
+      color: black;
     }
   }
   //FIN NAVBAR RESPONSIVE

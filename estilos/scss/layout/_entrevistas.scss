@@ -18,10 +18,18 @@
   }
 
   &__parrafo {
+    width: 80%;
+    margin: 0 auto;
     text-align: center;
     font-size: 1rem;
     letter-spacing: 0.1em;
     line-height: 30px;
+
+    &__redessociales {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      color: crimson;
+    }
   }
 
   &__videos {

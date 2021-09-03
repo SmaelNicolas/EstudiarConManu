@@ -7,13 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudiar con Manu</title>
 
-
     <!--  LINK KIT FONTAWESOME  -->
     <script src="https://kit.fontawesome.com/12873818e3.js" crossorigin="anonymous">
     </script>
-
-
-
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -31,9 +27,9 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <!-- FONT BEBAS NEUE -->
+    <!-- FONT SORA -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap');
     </style>
 
     <!-- LINK CSS -->
@@ -56,34 +52,33 @@
 
             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
 
-            // /*responsive code begin*/
+            /*responsive code begin*/
 
-            // var MAX_WIDTH = 980;
+            var MAX_WIDTH = 980;
 
-            // function ScaleSlider() {
-            //     var containerElement = jssor_1_slider.$Elmt.parentNode;
-            //     var containerWidth = containerElement.clientWidth;
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
 
-            //     if (containerWidth) {
+                if (containerWidth) {
 
-            //         var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
 
-            //         jssor_1_slider.$ScaleWidth(expectedWidth);
-            //     }
-            //     else {
-            //         window.setTimeout(ScaleSlider, 30);
-            //     }
-            // }
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
 
-            // ScaleSlider();
+            ScaleSlider();
 
-            // $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            // $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            // $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            // /*#endregion responsive code end*/
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
         };
     </script>
-
 
 </head>
 
@@ -101,10 +96,12 @@
             </div>
 
             <ul class="header__navbar__lista">
-                <li><a href="http://google.com">INICIO</a></li>
-                <li><a href="http://google.com">QUIEN SOY</a></li>
-                <li><a href=" http://google.com">CONSEJOS</a></li>
-                <li><a href="http://google.com">DONACIONES</a></li>
+                <li><a href="#sobremi">Sobre Mi</a></li>
+                <li><a href="#entrevistas">Entrevistas</a></li>
+                <li><a href="#tips">Tips y Consejos</a></li>
+                <li><a href="#donaciones">Donaciones</a></li>
+                <li><a href="#marcas">Marcas</a></li>
+                <li><a href="#massobremi">Más de mi</a></li>
             </ul>
 
             <div class=" header__navbar__redes">
@@ -179,14 +176,14 @@
 
         <!-- ANIMACION SCROLL DOWN -->
         <section id="scrollDown" class="scrolldown">
-            <a href="#tips"><span></span></a>
+            <a href="#sobremi"><span></span></a>
         </section>
         <!-- FIN ANIMACION SCROLL DOWN -->
     </header>
     <!-- FIN HEADER -->
 
     <!-- SOBRE MI -->
-    <section class="sobremi" id="sobreMi">
+    <section class="sobremi" id="sobremi">
 
         <div class="sobremi__info">
             <img class="sobremi__info__img" src="./img/sobremi.png" alt="">
@@ -194,13 +191,12 @@
                 <br>
                 <span class="sobremi__info__texto__titulo">Sobre Mi</span> <br><br>
                 <span class="sobremi__info__texto__letra">M</span>i nombre es Manuel, de apodo “manuca”, decidí crear
-                contenido orientado a estudiantes actuales y
-                futuros de la
-                universidad. La misión del proyecto es responder a todas esas preguntas que se nos vienen a la cabeza
-                cuando estamos en
-                la facultad: ¿Cómo hago para organizarme? ¿Será difícil? ¿Qué material de estudio necesito? ¿Puedo
-                aprobar las materias
-                sin llorar tanto? La idea en sí es brindar un apoyo a esas preguntas, y muchas más, a través de videos
+                contenido orientado a estudiantes actuales y futuros de la universidad. La misión del proyecto es
+                responder a todas esas preguntas que se nos vienen a la cabeza
+                cuando estamos en la facultad: ¿Cómo hago para organizarme? ¿Será difícil? ¿Qué material de estudio
+                necesito? ¿Puedo
+                aprobar las materias sin llorar tanto? La idea en sí es brindar un apoyo a esas preguntas, y muchas más,
+                a través de videos
                 en Internet. <br><br>
                 <span class="sobremi__info__texto__letra">A</span>ctualmente estoy estudiando Relaciones Públicas,
                 aunque hice el CBC de 2 carreras en la UBA
@@ -226,13 +222,13 @@
             <div class="jssor_1" id="jssor_1">
                 <div class="slides" data-u="slides">
                     <div>
-                        <img class="image_slider" src="img/manu.jpg" />
+                        <img class="image_slider" src="./img/1.jpg" />
                     </div>
                     <div>
-                        <img class="image_slider" src="img/sobremi.png" />
+                        <img class="image_slider" src="./img/2.jpg" />
                     </div>
                     <div>
-                        <img class="image_slider" src="img/manu.jpg" />
+                        <img class="image_slider" src="./img/3.jpeg" />
                     </div>
                     <div>
                         <img class="image_slider" src="img/sobremi.png" />
@@ -273,32 +269,34 @@
     <!-- FIN SOBRE MI -->
 
     <!-- ENTREVISTAS -->
-    <section class="entrevistas" id="entrevista">
+    <section class="entrevistas" id="entrevistas">
         <h2 class="entrevistas__titulo">ENTREVISTAS</h2>
 
         <p class="entrevistas__parrafo">En esta lista de reproducción encontrarás entrevistas a estudiantes y
-            profesionales de distintas carreras. Si necesitas
-            que haga alguna de tu interés, podes pedírmela por mis redes sociales o por mi patreon (abajo te cuento
-            más).</p>
+            profesionales de distintas carreras. Si necesitas que haga alguna de tu interés, podes pedírmela por mis
+            <a class="entrevistas__parrafo__redessociales" href="#footer">redes sociales</a> o por mi patreon (abajo te
+            cuento
+            más).
+        </p>
 
-        <div class="entrevistas__videos">
+        <div class="entrevistas__videos" id="entrevistas">
 
             <iframe class="entrevistas__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLjy3UjvJIWqYm4qpfUSZGAeRIMSkDaucT"
+                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJwue1DmZWqH2CChiNxhA4Kj"
                 title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
             <iframe class="entrevistas__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLjy3UjvJIWqbSUofhCbyc12Do9TxkSvqu"
+                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJwue1DmZWqH2CChiNxhA4Kj"
                 title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
             <iframe class="entrevistas__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLjy3UjvJIWqaASvewRKWO-sBBHDk1PxBE"
+                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJwue1DmZWqH2CChiNxhA4Kj"
                 title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
 
         </div>
@@ -346,21 +344,21 @@
     <!-- FIN TIPS Y CONSEJOS -->
 
     <!-- DONACIONES -->
-    <section class="donaciones">
+    <section class="donaciones" id="donaciones">
         <h2>DONACIONES</h2>
     </section>
     <!-- FIN DONACIONES -->
 
 
     <!-- MARCAS TRABAJO -->
-    <section class="marcas">
+    <section class="marcas" id="marcas">
         <h2>MARCAS</h2>
     </section>
     <!-- FIN MARCAS TRABAJO -->
 
 
     <!--TE CUENTO MAS SOBRE MI -->
-    <section class="massobremi">
+    <section class="massobremi" id="massobremi">
         <h2>TE CUENTO MAS SOBRE MI</h2>
     </section>
     <!-- FIN TE CUENTO MAS SOBRE MI -->
