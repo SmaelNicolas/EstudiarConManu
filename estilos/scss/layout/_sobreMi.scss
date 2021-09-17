@@ -8,6 +8,9 @@
   display: flex;
   flex-direction: row;
 
+  justify-content: center;
+  align-items: center;
+
   overflow: hidden;
 
   &__info {
@@ -29,10 +32,10 @@
       margin: 0 auto;
       height: auto;
 
-      padding: 100px 5px 25px 5px;
+      padding: 100px 35px 25px 35px;
       margin-top: -90px;
 
-      background-color: $colorBgSobremi;
+      background-color: $colorTurquesa;
 
       text-align: start;
       font-size: 1rem;
@@ -61,25 +64,15 @@
     }
   }
 
-  &__fotos {
-    min-width: 650px;
-    max-width: 800px;
-    height: auto;
+  &__video {
+    max-width: 700px;
+
+    min-height: 350px;
+    max-height: 950px;
+
     margin: 0 auto;
-    margin-top: 50px;
 
-    .jssor_1 {
-      position: relative;
-      top: 25%;
-      max-width: 100%;
-      overflow: hidden;
-      height: 500px;
-    }
-
-    .slides {
-      cursor: grab;
-      height: 500px;
-    }
+    border-radius: 15px;
   }
 }
 
@@ -92,21 +85,5 @@
       padding-left: 0px;
       padding-right: 0px;
     }
-
-    .jssor_1 {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      height: 500px;
-    }
-
-    .slides {
-      width: 100%;
-      cursor: grab;
-      height: 500px;
-    }
   }
-}
-
-@media only screen and (max-width: 950px) {
 }

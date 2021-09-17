@@ -4,7 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   width: calc(100vw - (100vw - 100%));
-  font-family: "Sora", sans-serif;
   scroll-behavior: smooth; }
 
 .header {
@@ -14,24 +13,28 @@
   flex-direction: column;
   padding-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.418);
-  background-image: url(../../img/up2.jpg);
+  background-image: url(../../img/derecho-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
   .header__navbar {
     width: 100%;
-    height: 300px;
+    height: 150px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center; }
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Bebas Neue", cursive;
+    background-color: #14274a1a;
+    margin-bottom: 150px; }
     .header__navbar__responsive {
       display: none; }
     .header__navbar__logo {
       max-width: 150px; }
       .header__navbar__logo img {
-        border-radius: 50%; }
+        border-radius: 50%;
+        margin-left: 20px; }
     .header__navbar__lista {
       width: auto;
       display: flex;
@@ -44,26 +47,27 @@
       margin: 0;
       gap: 1em; }
       .header__navbar__lista :hover {
-        color: #00f5dc; }
+        color: #00f6da; }
       .header__navbar__lista li {
         width: auto;
         margin-right: 5px; }
       .header__navbar__lista a {
         font-size: 2vw;
-        color: #fbde83; }
+        color: #ffdb82; }
     .header__navbar__redes {
       width: auto;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       text-align: center;
-      gap: 0.5em; }
+      gap: 2em;
+      padding-right: 20px; }
       .header__navbar__redes :hover {
-        color: #fbde83; }
+        color: #ffdb82; }
       .header__navbar__redes a {
         width: auto;
         font-size: 2vw;
-        color: #00f5dc; }
+        color: #00f6da; }
   .header__intro {
     width: 100%;
     height: auto;
@@ -76,28 +80,36 @@
       display: flex;
       flex-direction: column; }
       .header__intro__titulos__h1 {
-        font-size: 5vw;
-        color: #00f5dc;
-        text-shadow: 3px 2px #000000;
-        font-weight: 900;
+        color: #00f6da;
+        -webkit-text-stroke: 2px black;
+        font-size: 77px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
         letter-spacing: 1px; }
-      .header__intro__titulos__linea {
-        width: 30vw;
-        height: 2px;
-        background-color: #fbde83;
-        margin-bottom: 15px; }
       .header__intro__titulos__h2 {
-        font-size: 2vw;
-        color: #fbde83;
-        text-shadow: 1px 2px #000000;
-        letter-spacing: 4px;
+        color: #00f6da;
+        -webkit-text-stroke: 2px black;
+        font-family: "Bebas Neue", cursive;
+        font-size: 133px;
+        letter-spacing: 1px;
         font-weight: 500; }
+      .header__intro__titulos__linea {
+        width: 20vw;
+        height: 2px;
+        background-color: #ffdb82;
+        margin-bottom: 15px; }
+      .header__intro__titulos__h3 {
+        color: #ffdb82;
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+        letter-spacing: 0.5px;
+        font-weight: 300; }
     .header__intro__imagen {
       max-width: 200px; }
       .header__intro__imagen img {
         border-radius: 50%; }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1050px) {
   .header {
     height: auto; }
   .header__navbar {
@@ -108,12 +120,16 @@
   .header__intro {
     flex-direction: column; }
   .header__intro__titulos__h1 {
-    font-size: 6vw; }
-  .header__intro__titulos__linea {
-    width: 20vw;
-    margin-bottom: 5px; }
+    font-size: 10vw;
+    -webkit-text-stroke: 0.2vw black; }
   .header__intro__titulos__h2 {
-    font-size: 2vw;
+    font-size: 15vw;
+    -webkit-text-stroke: 0.2vw black; }
+  .header__intro__titulos__linea {
+    width: 100px;
+    margin-bottom: 5px; }
+  .header__intro__titulos__h3 {
+    font-size: 3.5vw;
     letter-spacing: 2px; }
   .header__navbar__responsive {
     display: initial;
@@ -132,17 +148,15 @@
     .header__navbar__responsive .nav-item {
       font-size: 3vw; }
     .header__navbar__responsive .nav-link {
-      color: #00f5dc;
-      color: black;
+      color: #ffdb82;
       font-size: 2vw; }
     .header__navbar__responsive .dropdown-menu {
       background-color: transparent;
       font-size: 2vw; }
     .header__navbar__responsive .dropdown-item {
-      color: #fbde83;
+      color: #ffdb82;
       text-align: center;
-      font-size: 4vw;
-      color: black; } }
+      font-size: 4vw; } }
 
 .sobremi {
   width: 100%;
@@ -151,6 +165,8 @@
   padding-bottom: 50px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   overflow: hidden; }
   .sobremi__info {
     height: auto;
@@ -166,9 +182,9 @@
       max-width: 450px;
       margin: 0 auto;
       height: auto;
-      padding: 100px 5px 25px 5px;
+      padding: 100px 35px 25px 35px;
       margin-top: -90px;
-      background-color: #aef3eb;
+      background-color: #00f6da;
       text-align: start;
       font-size: 1rem;
       letter-spacing: 0.1em;
@@ -186,21 +202,12 @@
       height: auto;
       border-radius: 50%;
       z-index: 9; }
-  .sobremi__fotos {
-    min-width: 650px;
-    max-width: 800px;
-    height: auto;
+  .sobremi__video {
+    max-width: 700px;
+    min-height: 350px;
+    max-height: 950px;
     margin: 0 auto;
-    margin-top: 50px; }
-    .sobremi__fotos .jssor_1 {
-      position: relative;
-      top: 25%;
-      max-width: 100%;
-      overflow: hidden;
-      height: 500px; }
-    .sobremi__fotos .slides {
-      cursor: grab;
-      height: 500px; }
+    border-radius: 15px; }
 
 @media only screen and (max-width: 950px) {
   .sobremi {
@@ -208,16 +215,7 @@
     .sobremi__info {
       width: 100%;
       padding-left: 0px;
-      padding-right: 0px; }
-    .sobremi .jssor_1 {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-      height: 500px; }
-    .sobremi .slides {
-      width: 100%;
-      cursor: grab;
-      height: 500px; } }
+      padding-right: 0px; } }
 
 .footer {
   width: 100%;
@@ -225,7 +223,7 @@
   background: red; }
 
 .toTop {
-  color: #00f5dc;
+  color: #00f6da;
   position: fixed;
   z-index: 1;
   font-size: 2em;
@@ -256,7 +254,7 @@
   width: 30px;
   height: 50px;
   margin-left: -15px;
-  border: 2px solid #00f5dc;
+  border: 2px solid #00f6da;
   border-radius: 50px;
   box-sizing: border-box; }
 
@@ -267,7 +265,7 @@
   width: 6px;
   height: 6px;
   margin-left: -3px;
-  background-color: #fbde83;
+  background-color: #ffdb82;
   border-radius: 100%;
   -webkit-animation: sdb10 2s infinite;
   animation: sdb10 2s infinite;
