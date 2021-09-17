@@ -35,51 +35,6 @@
     <!-- LINK CSS -->
     <link rel="stylesheet" href="estilos/css/main.css">
 
-    <!-- Jssor Slider Begin -->
-    <script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        window.jssor_1_slider_init = function () {
-
-            var jssor_1_options = {
-                $AutoPlay: 1,
-                $Idle: 0,
-                $SlideDuration: 5000,
-                $SlideEasing: $Jease$.$Linear,
-                $PauseOnHover: 4,
-                $SlideWidth: 500,
-                $Align: 0
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*responsive code begin*/
-
-            var MAX_WIDTH = 980;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
-
 </head>
 
 <body>
@@ -218,154 +173,17 @@
 
         </div>
 
-        <div class="sobremi__fotos">
+        <div class="sobremi__video">
             <div class="jssor_1" id="jssor_1">
-                <div class="slides" data-u="slides">
-                    <div>
-                        <img class="image_slider" src="./img/1.jpg" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="./img/2.jpg" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="./img/3.jpeg" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/sobremi.png" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/manu.jpg" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/manu.jpg" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/sobremi.png" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/manu.jpg" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/sobremi.png" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/manu.jpg" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/sobremi.png" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/manu.jpg" />
-                    </div>
-                    <div>
-                        <img class="image_slider" src="img/sobremi.png" />
-                    </div>
-                </div>
-
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jv1J6xWIN8o"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
             </div>
 
     </section>
     <!-- FIN SOBRE MI -->
-
-    <!-- ENTREVISTAS -->
-    <section class="entrevistas" id="entrevistas">
-        <h2 class="entrevistas__titulo">ENTREVISTAS</h2>
-
-        <p class="entrevistas__parrafo">En esta lista de reproducción encontrarás entrevistas a estudiantes y
-            profesionales de distintas carreras. Si necesitas que haga alguna de tu interés, podes pedírmela por mis
-            <a class="entrevistas__parrafo__redessociales" href="#footer">redes sociales</a> o por mi patreon (abajo te
-            cuento
-            más).
-        </p>
-
-        <div class="entrevistas__videos" id="entrevistas">
-
-            <iframe class="entrevistas__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJwue1DmZWqH2CChiNxhA4Kj"
-                title="YouTube video player" frameborder="0"
-                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-            <iframe class="entrevistas__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJwue1DmZWqH2CChiNxhA4Kj"
-                title="YouTube video player" frameborder="0"
-                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-            <iframe class="entrevistas__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJwue1DmZWqH2CChiNxhA4Kj"
-                title="YouTube video player" frameborder="0"
-                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-
-        </div>
-    </section>
-    <!-- FIN ENTREVISTAS -->
-
-    <!-- TIPS Y CONSEJOS -->
-    <section class="tips" id="tips">
-        <h2 class="tips__titulo">Tips y consejos</h2>
-
-        <p class="tips__parrafo">¿Necesitas ayuda con tus materias? En estos videos tenes todos los tips y consejos que
-            me hubiese gustado que me den
-            antes de arrancar la universidad.</p>
-
-
-        <div class="tips__videos">
-            <iframe class="tips__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJwue1DmZWqH2CChiNxhA4Kj"
-                title="YouTube video player" frameborder="0"
-                allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <iframe class="tips__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJyt_3JecuROd0b7cSUzmm4v"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <iframe class="tips__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJwK2iswn_qLNX3jaTYqZY4c"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <iframe class="tips__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJyFdU_0RouUrvc3OmlxJc2N"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            <iframe class="tips__videos__reproductor"
-                src="https://www.youtube.com/embed/videoseries?list=PLEYLOBOYZRJzLq_7lRQ-C9FaUJXL-_muN"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </div>
-
-    </section>
-    <!-- FIN TIPS Y CONSEJOS -->
-
-    <!-- DONACIONES -->
-    <section class="donaciones" id="donaciones">
-        <h2>DONACIONES</h2>
-    </section>
-    <!-- FIN DONACIONES -->
-
-
-    <!-- MARCAS TRABAJO -->
-    <section class="marcas" id="marcas">
-        <h2>MARCAS</h2>
-    </section>
-    <!-- FIN MARCAS TRABAJO -->
-
-
-    <!--TE CUENTO MAS SOBRE MI -->
-    <section class="massobremi" id="massobremi">
-        <h2>TE CUENTO MAS SOBRE MI</h2>
-    </section>
-    <!-- FIN TE CUENTO MAS SOBRE MI -->
-
-    <!-- FOOTER -->
-    <footer class="footer" id="footer"></footer>
-    <!-- FIN FOOTER -->
 
 
 
@@ -379,14 +197,6 @@
         </a>
     </div>
     <!--  FIN BOTON toTop -->
-
-
-
-
-
-    <!-- SCRIPTS -->
-    <script type="text/javascript">jssor_1_slider_init();
-    </script>
 </body>
 
 </html>
