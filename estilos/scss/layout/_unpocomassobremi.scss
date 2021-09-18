@@ -1,0 +1,121 @@
+.unpocomassobremi {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-color: $colorAzulOscuro;
+
+  &__titulo {
+    display: flex;
+    flex-direction: row;
+
+    min-width: 320px;
+    max-width: 410px;
+    height: 80px;
+
+    line-height: 75px;
+
+    margin: 0 auto;
+
+    border-radius: 150px;
+    justify-content: space-between;
+
+    margin-bottom: 150px;
+
+    border: 5px solid $colorBlanco;
+
+    &__texto {
+      width: 100%;
+      color: $colorBlanco;
+
+      text-align: center;
+      letter-spacing: 0px;
+      font-weight: 100;
+
+      font-size: 55px;
+      font-family: $fontBebas;
+    }
+
+    &__userplus {
+      width: 100px;
+      height: 75px;
+
+      position: relative;
+      right: 2px;
+      bottom: 2px;
+
+      font-size: 45px;
+
+      line-height: 75px;
+      text-align: center;
+
+      color: $colorAzulOscuro;
+
+      background-color: $colorBlanco;
+
+      border-radius: 50%;
+    }
+  }
+
+  &__parrafo {
+    max-width: 900px;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 0 5px 150px 5px;
+
+    text-align: justify;
+    letter-spacing: 2px;
+    font-family: $fontLato;
+    font-size: x-large;
+
+    color: $colorBlanco;
+
+    &__effect {
+      font-weight: 600;
+      color: $colorAmarillo;
+    }
+  }
+
+  &__imagen {
+    min-width: 325px;
+    max-width: 1500px;
+    height: 300px;
+
+    margin: 0 auto;
+
+    background-image: url(../../img/vlogs.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 10px;
+
+    &__click {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .unpocomassobremi__parrafo {
+    padding: 0 5px 50px 5px;
+  }
+
+  .unpocomassobremi__titulo__texto {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .unpocomassobremi__imagen {
+    background-image: url(../../img/vlogs2.jpg);
+    background-size: contain;
+  }
+}

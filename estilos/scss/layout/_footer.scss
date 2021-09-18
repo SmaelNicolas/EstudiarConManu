@@ -1,5 +1,84 @@
 .footer {
   width: 100%;
-  height: 100vh;
-  background: red;
+  height: auto;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background: $colorBlanco;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+  &__mapasitio {
+    width: 40%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: start;
+    text-decoration: none;
+    font-family: $fontBebas;
+    letter-spacing: 1px;
+    font-size: x-large;
+    color: $colorAzulOscuro;
+
+    &__h5 {
+      font-size: xx-large;
+    }
+
+    &__lista {
+      display: block;
+      list-style: none;
+
+      &__li {
+        a {
+          font-size: 10px;
+          color: $colorAzulOscuro;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  &__linea {
+    width: 2px;
+    height: 300px;
+    background-color: $colorAzulOscuro;
+  }
+
+  &__contacto {
+    color: $colorAzulOscuro;
+
+    width: 40%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: end;
+    text-decoration: none;
+
+    font-family: $fontBebas;
+
+    &__h5 {
+      font-size: xx-large;
+    }
+
+    a {
+      width: auto;
+      align-self: end;
+
+      color: $colorAzulOscuro;
+      font-size: 32px;
+    }
+  }
 }

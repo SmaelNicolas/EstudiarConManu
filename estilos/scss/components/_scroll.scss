@@ -7,8 +7,8 @@
   text-decoration: none;
   transition: opacity 0.3s;
   cursor: auto;
-  margin-top: 20vh;
-  margin-bottom: 20px;
+  margin-top: 200px;
+  margin-bottom: 50px;
 }
 .scrolldown a:hover {
   opacity: 0.5;
@@ -68,5 +68,11 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .scrolldown {
+    display: none;
   }
 }

@@ -1,0 +1,163 @@
+.donaciones {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__titulo {
+    display: flex;
+    flex-direction: row;
+
+    min-width: 320px;
+    max-width: 410px;
+    height: 80px;
+
+    line-height: 75px;
+
+    margin: 0 auto;
+
+    border-radius: 150px;
+    justify-content: space-between;
+
+    margin-bottom: 150px;
+
+    border: 5px solid $colorAzulOscuro;
+
+    &__container {
+      display: flex;
+
+      background-color: $colorAzulOscuro;
+      width: 95px;
+      height: 75px;
+
+      position: relative;
+      right: 5px;
+      bottom: 2px;
+
+      border-radius: 50%;
+
+      justify-content: center;
+      align-items: center;
+
+      &__handpoint {
+        width: 35px;
+        height: 55px;
+        img {
+          vertical-align: unset;
+        }
+      }
+    }
+
+    &__texto {
+      width: 100%;
+      color: $colorAzulOscuro;
+
+      text-align: center;
+      letter-spacing: 0px;
+      font-weight: 100;
+
+      font-size: 55px;
+      font-family: $fontBebas;
+    }
+  }
+
+  &__parrafo {
+    max-width: 1100px;
+    height: auto;
+
+    margin: 0 auto;
+    padding: 0 5px 150px 5px;
+
+    text-align: justify;
+    letter-spacing: 2px;
+    font-family: $fontLato;
+    font-size: x-large;
+
+    color: $colorAzulOscuro;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    gap: 40px;
+
+    :hover {
+      @include gelatina();
+    }
+
+    &__link {
+      width: 200px;
+      height: 200px;
+
+      &__mp {
+        width: 200px;
+        height: 200px;
+
+        margin: 0 auto;
+
+        border: 15px solid $colorAzulOscuro;
+        border-radius: 50%;
+
+        text-align: center;
+
+        background-image: url(../../img/mp.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &__paypal {
+        width: 200px;
+        height: 200px;
+
+        margin: 0 auto;
+
+        border: 15px solid $colorAzulOscuro;
+        border-radius: 50%;
+
+        text-align: center;
+
+        background-image: url(../../img/ppal.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &__patreon {
+        width: 200px;
+        height: 200px;
+
+        margin: 0 auto;
+
+        border: 15px solid $colorAzulOscuro;
+        border-radius: 50%;
+
+        text-align: center;
+
+        background-image: url(../../img/p.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .donaciones__titulo {
+    margin-bottom: 100px;
+  }
+
+  .donaciones__parrafo {
+    text-align: justify;
+    letter-spacing: 0px;
+    padding: 5px 5px 100px 5px;
+  }
+}

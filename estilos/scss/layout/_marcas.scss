@@ -1,0 +1,132 @@
+.marcas {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-color: $colorAzulOscuro;
+
+  &__titulo {
+    display: flex;
+    flex-direction: row;
+
+    min-width: 320px;
+    max-width: 410px;
+    height: 80px;
+
+    line-height: 75px;
+
+    margin: 0 auto;
+
+    border-radius: 150px;
+    justify-content: space-between;
+
+    margin-bottom: 150px;
+
+    border: 5px solid $colorBlanco;
+
+    &__texto {
+      width: 100%;
+      color: $colorBlanco;
+
+      text-align: center;
+      letter-spacing: 0px;
+      font-weight: 100;
+
+      font-size: 55px;
+      font-family: $fontBebas;
+    }
+
+    &__handshake {
+      width: 100px;
+      height: 75px;
+
+      position: relative;
+      right: 2px;
+      bottom: 2px;
+
+      font-size: 45px;
+
+      line-height: 75px;
+      text-align: center;
+
+      color: $colorAzulOscuro;
+
+      background-color: $colorBlanco;
+
+      border-radius: 50%;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      max-width: 450px;
+      height: auto;
+
+      margin: 0 auto;
+      padding: 30px 25px;
+      margin-bottom: 30px;
+
+      background-color: $colorBlanco;
+
+      border-radius: 5px;
+
+      text-decoration: none;
+
+      &__image {
+        width: 300px;
+        height: 100px;
+
+        margin: 0 auto;
+        margin-bottom: 40px;
+      }
+
+      &__texto1 {
+        color: $colorAzulOscuro;
+
+        text-align: start;
+        letter-spacing: 1px;
+        font-family: $fontLato;
+        font-size: large;
+        margin-bottom: 20px;
+      }
+
+      &__texto2 {
+        color: $colorAzulOscuro;
+
+        text-align: start;
+        letter-spacing: 1px;
+        font-family: $fontLato;
+        font-size: large;
+        margin-bottom: 20px;
+
+        &__porcentaje {
+          font-weight: bold;
+        }
+      }
+
+      &__codigo {
+        color: $colorAzulOscuro;
+
+        font-weight: bold;
+        text-align: start;
+        letter-spacing: 1px;
+        font-family: $fontLato;
+        font-size: x-large;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
