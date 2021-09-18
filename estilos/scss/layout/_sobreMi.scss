@@ -3,11 +3,13 @@
   height: auto;
 
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  gap: 40px;
 
   justify-content: center;
   align-items: center;
@@ -68,24 +70,46 @@
   }
 
   &__video {
-    width: 650px;
-    min-height: 350px;
+    max-width: 650px;
+    height: auto;
 
     margin: 0 auto;
-    margin-bottom: 50px;
+    padding: 5px 15px 20px 15px;
 
-    border-radius: 15px;
+    margin-bottom: 40px;
+
+    &__link {
+      width: 100%;
+      min-height: 350px;
+
+      margin: 0 auto;
+      margin-bottom: 50px;
+
+      border-radius: 15px;
+    }
   }
 }
 
 @media only screen and (max-width: 950px) {
   .sobremi {
-    flex-direction: column;
-
     &__info {
       width: 100%;
       padding-left: 0px;
       padding-right: 0px;
+
+      &__texto {
+        border-radius: 0%;
+      }
+    }
+
+    &__video {
+      padding: 25px 0px;
+      border-radius: 0px;
+
+      &__link {
+        border-radius: 0%;
+        margin-bottom: 10px;
+      }
     }
   }
 }
