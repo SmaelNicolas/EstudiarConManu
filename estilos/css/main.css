@@ -147,7 +147,8 @@
         border: 2px solid #14274a;
         margin-left: 85%;
         font-size: x-large;
-        margin-top: 30px; }
+        margin-top: 30px;
+        margin-bottom: 30px; }
     .header__navbar__responsive .nav-item {
       font-size: 5vw; }
     .header__navbar__responsive .nav-link {
