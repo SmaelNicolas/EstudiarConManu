@@ -35,7 +35,8 @@
       padding: 100px 15px 25px 15px;
       margin-top: -90px;
 
-      background-color: $colorTuquesaFondo;
+      background-color: $colorAzulOscuro;
+      color: $colorBlanco;
 
       text-align: center;
       font-size: 1rem;
@@ -67,12 +68,11 @@
   }
 
   &__video {
-    max-width: 700px;
-
+    width: 650px;
     min-height: 350px;
-    max-height: 950px;
 
     margin: 0 auto;
+    margin-bottom: 50px;
 
     border-radius: 15px;
   }
