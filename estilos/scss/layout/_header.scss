@@ -97,6 +97,7 @@
     height: auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
     justify-content: space-around;
     align-items: center;
@@ -145,7 +146,7 @@
     }
 
     &__imagen {
-      max-width: 200px;
+      max-width: 350px;
       img {
         border-radius: 50%;
       }
