@@ -73,20 +73,32 @@
 
     &__redes {
       width: auto;
+      height: auto;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       text-align: center;
       gap: 2vw;
-      padding-right: 20px;
+      padding-right: 25px;
       :hover {
+        background-color: $colorTurquesa;
         color: $colorAmarillo;
       }
 
-      a {
-        width: auto;
-        font-size: 2vw;
-        color: $colorTurquesa;
+      &__a {
+        width: 50px;
+        height: 50px;
+
+        font-size: 1.8vw;
+
+        border-radius: 50%;
+
+        color: $colorAmarillo;
+
+        :hover {
+          background-color: transparent;
+          color: $colorAmarillo;
+        }
       }
     }
   }
@@ -95,6 +107,7 @@
   &__intro {
     width: 100%;
     height: auto;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -104,6 +117,7 @@
 
     &__titulos {
       width: auto;
+
       display: flex;
       flex-direction: column;
 
@@ -163,13 +177,13 @@
     display: none;
   }
 
-  .header__intro__titulos {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   .header__intro {
     flex-direction: column;
+  }
+
+  .header__intro__titulos {
+    padding-bottom: 40px;
+    padding-left: 15px;
   }
 
   .header__intro__titulos__h1 {
