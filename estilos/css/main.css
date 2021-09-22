@@ -47,7 +47,8 @@
       margin: 0;
       gap: 10px; }
       .header__navbar__lista :hover {
-        color: #00f6da; }
+        color: #00f6da;
+        transition: 0.3s linear; }
       .header__navbar__lista li {
         width: auto;
         margin-right: 5px; }
@@ -66,7 +67,8 @@
       padding-right: 25px; }
       .header__navbar__redes :hover {
         background-color: #00f6da;
-        color: #ffdb82; }
+        color: #ffdb82;
+        transition: 0.3s linear; }
       .header__navbar__redes__a {
         width: 50px;
         height: 50px;
@@ -532,6 +534,8 @@
       background-color: #fff;
       border-radius: 5px;
       text-decoration: none; }
+      .marcas__container__card:hover {
+        text-decoration: none; }
       .marcas__container__card__image {
         width: 300px;
         height: 100px;
@@ -800,7 +804,7 @@
   width: 100%;
   height: auto;
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
   background: #fff;
   display: flex;
   flex-direction: row;
@@ -819,14 +823,14 @@
     font-family: "Bebas Neue", cursive;
     letter-spacing: 1px;
     font-size: x-large;
-    color: #14274a; }
+    color: #14274a;
+    font-weight: 200; }
     .footer__mapasitio__h5 {
       font-size: xx-large; }
     .footer__mapasitio__lista {
       display: block;
       list-style: none; }
       .footer__mapasitio__lista__li a {
-        font-size: 10px;
         color: #14274a;
         font-size: 15px; }
   .footer__linea {
@@ -848,10 +852,11 @@
       width: auto;
       align-self: end;
       color: #14274a;
-      font-size: 32px; }
+      font-size: 32px;
+      font-weight: 300; }
 
 .toTop {
-  color: #ffdb82;
+  color: #00f6da;
   position: fixed;
   z-index: 1;
   font-size: 2em;

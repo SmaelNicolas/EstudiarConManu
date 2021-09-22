@@ -3,7 +3,7 @@
   height: auto;
 
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
 
   background: $colorBlanco;
 
@@ -30,6 +30,7 @@
     letter-spacing: 1px;
     font-size: x-large;
     color: $colorAzulOscuro;
+    font-weight: 200;
 
     &__h5 {
       font-size: xx-large;
@@ -41,7 +42,6 @@
 
       &__li {
         a {
-          font-size: 10px;
           color: $colorAzulOscuro;
           font-size: 15px;
         }
@@ -79,6 +79,7 @@
 
       color: $colorAzulOscuro;
       font-size: 32px;
+      font-weight: 300;
     }
   }
 }
