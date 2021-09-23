@@ -13,7 +13,7 @@
   flex-direction: column;
   padding-bottom: 50px;
   background-color: rgba(255, 255, 255, 0.418);
-  background-image: url(../../img/derecho-1.png);
+  background-image: url(https://i.ibb.co/PG00qxZ/derecho-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     font-family: "Bebas Neue", cursive;
     background-color: #14274a1a;
@@ -31,53 +31,27 @@
     .header__navbar__responsive {
       display: none; }
     .header__navbar__logo {
-      max-width: 150px; }
+      width: 150px; }
       .header__navbar__logo img {
-        border-radius: 50%;
-        margin-left: 20px; }
+        border-radius: 50%; }
     .header__navbar__lista {
-      width: auto;
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      text-decoration: underline;
-      letter-spacing: 1px;
-      justify-content: center;
-      text-align: center;
-      margin: 0;
-      gap: 10px; }
-      .header__navbar__lista :hover {
-        color: #00f6da;
-        transition: 0.3s linear; }
-      .header__navbar__lista li {
-        width: auto;
-        margin-right: 5px; }
-      .header__navbar__lista a {
-        font-size: 25px;
-        color: #ffdb82;
-        letter-spacing: 3px; }
-    .header__navbar__redes {
       width: auto;
       height: auto;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
-      text-align: center;
-      gap: 2vw;
-      padding-right: 25px; }
-      .header__navbar__redes :hover {
-        background-color: #00f6da;
-        color: #ffdb82;
+      flex-wrap: wrap;
+      list-style: none;
+      text-decoration: underline;
+      gap: 50px; }
+      .header__navbar__lista :hover {
+        color: #00f6da;
         transition: 0.3s linear; }
-      .header__navbar__redes__a {
-        width: 50px;
-        height: 50px;
-        font-size: 1.8vw;
-        border-radius: 50%;
-        color: #ffdb82; }
-        .header__navbar__redes__a :hover {
-          background-color: transparent;
-          color: #ffdb82; }
+      .header__navbar__lista li {
+        width: auto; }
+      .header__navbar__lista a {
+        font-size: 30px;
+        color: #ffdb82;
+        letter-spacing: 3px; }
   .header__intro {
     width: 100%;
     height: auto;
@@ -686,7 +660,7 @@
         border: 15px solid #14274a;
         border-radius: 50%;
         text-align: center;
-        background-image: url(../../img/mp.jpg);
+        background-image: url(https://i.ibb.co/TtH3Tvf/mp.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center; }
@@ -697,7 +671,7 @@
         border: 15px solid #14274a;
         border-radius: 50%;
         text-align: center;
-        background-image: url(../../img/ppal.jpg);
+        background-image: url(https://i.ibb.co/zfTC9WQ/ppal.jpg);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center; }
@@ -708,7 +682,7 @@
         border: 15px solid #14274a;
         border-radius: 50%;
         text-align: center;
-        background-image: url(../../img/p.png);
+        background-image: url(https://i.ibb.co/qMCPp59/p.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center; }
@@ -780,7 +754,7 @@
     max-width: 1500px;
     height: 300px;
     margin: 0 auto;
-    background-image: url(../../img/vlogs.jpg);
+    background-image: url(https://i.ibb.co/x82S69Q/vlogs.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -797,7 +771,7 @@
 
 @media only screen and (max-width: 700px) {
   .unpocomassobremi__imagen {
-    background-image: url(../../img/vlogs2.jpg);
+    background-image: url(https://i.ibb.co/pJTrv35/vlogs2.jpg);
     background-size: contain; } }
 
 .footer {
@@ -864,6 +838,37 @@
   right: 35px;
   width: 10px;
   height: 10px; }
+
+.socials {
+  width: 45px;
+  height: 205px;
+  background-color: #1e221cb3;
+  position: fixed;
+  top: 42%;
+  z-index: 100;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px 0 0 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .socials__icons {
+    font-size: 25px;
+    color: #ffdb82;
+    letter-spacing: 3px; }
+    .socials__icons:hover {
+      color: #00f6da; }
+
+@media only screen and (max-width: 500px) {
+  .socials {
+    width: 205px;
+    height: 45px;
+    top: 0%;
+    left: 0%;
+    border-radius: 0 0 15px 0;
+    display: flex;
+    flex-direction: row; } }
 
 .scrolldown a {
   display: flex;

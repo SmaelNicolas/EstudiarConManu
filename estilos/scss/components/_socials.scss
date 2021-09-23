@@ -1,0 +1,39 @@
+.socials {
+  width: 45px;
+  height: 205px;
+  background-color: #1e221cb3;
+  position: fixed;
+  top: 42%;
+  z-index: 100;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px 0 0 15px;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__icons {
+    font-size: 25px;
+    color: $colorAmarillo;
+    letter-spacing: 3px;
+
+    &:hover {
+      color: $colorTurquesa;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .socials {
+    width: 205px;
+    height: 45px;
+    top: 0%;
+    left: 0%;
+    border-radius: 0 0 15px 0;
+
+    display: flex;
+    flex-direction: row;
+  }
+}
