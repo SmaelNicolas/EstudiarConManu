@@ -33,7 +33,7 @@
     .header__navbar__logo {
       width: 150px; }
       .header__navbar__logo img {
-        border-radius: 50%; }
+        border-radius: 1% 40%; }
     .header__navbar__lista {
       width: auto;
       height: auto;
@@ -90,7 +90,7 @@
         letter-spacing: 0.5px;
         font-weight: 300; }
     .header__intro__imagen {
-      max-width: 350px; }
+      max-width: 320px; }
       .header__intro__imagen img {
         border-radius: 50%; }
 
@@ -119,17 +119,16 @@
   .header__navbar__responsive {
     display: initial;
     margin: 0;
-    padding: 0;
-    padding-bottom: 50px; }
+    padding: 0; }
     .header__navbar__responsive .navbar-toggler {
       border-radius: 0.1%; }
       .header__navbar__responsive .navbar-toggler-icon {
         size: 100px;
         background-image: url(/img/bars-solid.svg);
         border-radius: 10%;
-        border: 2px solid #14274a;
+        border: 1px solid #14274a;
         margin-left: 85%;
-        font-size: x-large;
+        font-size: large;
         margin-top: 30px;
         margin-bottom: 30px; }
     .header__navbar__responsive .nav-item {
@@ -137,6 +136,7 @@
     .header__navbar__responsive .nav-link {
       color: #ffdb82;
       text-decoration: none;
+      justify-content: center;
       font-size: 4vw; }
     .header__navbar__responsive .dropdown-menu {
       background-color: transparent;
@@ -825,7 +825,8 @@
       align-self: end;
       color: #14274a;
       font-size: 32px;
-      font-weight: 300; }
+      font-weight: 300;
+      padding-bottom: 15px; }
 
 .toTop {
   color: #00f6da;
@@ -839,7 +840,7 @@
 
 .socials {
   width: 45px;
-  height: 205px;
+  height: 180px;
   background-color: #1e221cb3;
   position: fixed;
   top: 42%;
@@ -854,13 +855,15 @@
   .socials__icons {
     font-size: 25px;
     color: #ffdb82;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    text-align: start;
+    padding-left: 10px; }
     .socials__icons:hover {
       color: #00f6da; }
 
 @media only screen and (max-width: 500px) {
   .socials {
-    width: 205px;
+    width: 180px;
     height: 45px;
     top: 0%;
     left: 0%;

@@ -1,6 +1,6 @@
 .socials {
   width: 45px;
-  height: 205px;
+  height: 180px;
   background-color: #1e221cb3;
   position: fixed;
   top: 42%;
@@ -18,6 +18,8 @@
     font-size: 25px;
     color: $colorAmarillo;
     letter-spacing: 3px;
+    text-align: start;
+    padding-left: 10px;
 
     &:hover {
       color: $colorTurquesa;
@@ -27,7 +29,7 @@
 
 @media only screen and (max-width: 500px) {
   .socials {
-    width: 205px;
+    width: 180px;
     height: 45px;
     top: 0%;
     left: 0%;
